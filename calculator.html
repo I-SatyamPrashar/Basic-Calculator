@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" class="display" readonly>
+        <button class="clear" onclick="clr()">C</button>
+
+        <button onclick="pick(1)">1</button>
+        <button onclick="pick(2)">2</button>
+        <button onclick="pick(3)">3</button>
+        <button onclick="pick('/')">/</button>
+
+        <button onclick="pick(4)">4</button>
+        <button onclick="pick(5)">5</button>
+        <button onclick="pick(6)">6</button>
+        <button onclick="pick('*')">*</button>
+
+        <button onclick="pick(7)">7</button>
+        <button onclick="pick(8)">8</button>
+        <button onclick="pick(9)">9</button>
+        <button onclick="pick('-')">-</button>
+
+        <button onclick="pick('.')">.</button>
+        <button onclick="pick(0)">0</button>
+        <button onclick="solve()">=</button>
+        <button onclick="pick('+')">+</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
