@@ -1,14 +1,17 @@
 function pick(val) {
-    document.getElementById("a").value += val;
+    document.getElementById("display").value += val;
 }
 
 function clr() {
-    document.getElementById("a").value = " ";
+    document.getElementById("display").value = "";
 }
 
-
 function solve() {
-    var x = document.getElementById("a").value;
-    var y = eval(x);
-    document.getElementById("a").value = y;
+    var x = document.getElementById("display").value;
+    try {
+        var y = eval(x);
+        document.getElementById("display").value = y;
+    } catch (error) {
+        document.getElementById("display").value = "Error";
+    }
 }
